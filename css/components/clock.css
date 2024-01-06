@@ -1,0 +1,260 @@
+/* Main Clock Component Styles (Digital & Analog) */
+.clock-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.clock-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting-badge {
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-accent);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.timezone-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--btn-secondary-border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.digital-display-card {
+  width: 100%;
+  padding: 42px 28px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-readout-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  font-family: 'Orbitron', 'JetBrains Mono', monospace;
+  margin-bottom: 28px;
+  user-select: none;
+}
+
+.digit-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 140px;
+}
+
+.digit-val {
+  font-size: clamp(48px, 11vw, 105px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-accent);
+  text-shadow: var(--digit-glow);
+  letter-spacing: 2px;
+}
+
+.digit-label {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-top: 10px;
+}
+
+.separator-colon {
+  font-size: clamp(38px, 9vw, 85px);
+  font-weight: 700;
+  color: var(--text-muted);
+  line-height: 1;
+  animation: pulseColon 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulseColon {
+  0% { opacity: 0.25; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.period-box {
+  align-self: flex-start;
+  margin-left: 8px;
+}
+
+.ampm-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(14px, 2.5vw, 22px);
+  font-weight: 800;
+  background: var(--accent-grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.seconds-progress-container {
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 28px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent-grad);
+  border-radius: 10px;
+  box-shadow: 0 0 12px var(--accent-glow);
+  transition: width 0.3s linear;
+}
+
+.progress-milestones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.date-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 22px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+}
+
+.date-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.date-divider {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.clock-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.analog-clock-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.analog-dial {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--dial-bg);
+  border: 4px solid var(--card-border);
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 240, 255, 0.1);
+  position: relative;
+}
+
+.dial-mark {
+  position: absolute;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.mark-12 { top: 10px; left: 50%; transform: translateX(-50%); }
+.mark-3 { right: 12px; top: 50%; transform: translateY(-50%); }
+.mark-6 { bottom: 10px; left: 50%; transform: translateX(-50%); }
+.mark-9 { left: 12px; top: 50%; transform: translateY(-50%); }
+
+.dial-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--dial-hand-sec);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 0 8px var(--dial-hand-sec);
+}
+
+.dial-hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  border-radius: 4px;
+  transition: transform 0.05s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+
+.hand-hour {
+  width: 5px;
+  height: 52px;
+  background: var(--text-main);
+  margin-left: -2.5px;
+  z-index: 5;
+}
+
+.hand-minute {
+  width: 3.5px;
+  height: 72px;
+  background: var(--text-muted);
+  margin-left: -1.75px;
+  z-index: 6;
+}
+
+.hand-second {
+  width: 2px;
+  height: 85px;
+  background: var(--dial-hand-sec);
+  margin-left: -1px;
+  z-index: 7;
+}
+
+.analog-caption {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  font-weight: 600;
+}

@@ -1,0 +1,87 @@
+/* Precision Stopwatch & Lap Table Styles */
+.stopwatch-card {
+  padding: 40px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.stopwatch-display {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(42px, 8vw, 80px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  color: var(--text-main);
+}
+
+.sw-sub {
+  color: var(--text-accent);
+  font-size: 0.65em;
+}
+
+.sw-colon, .sw-dot {
+  color: var(--text-muted);
+}
+
+.stopwatch-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.laps-container {
+  padding: 24px;
+}
+
+.laps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.badge {
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-accent);
+}
+
+.laps-table-wrapper {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.laps-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.laps-table th {
+  padding: 10px 14px;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.laps-table td {
+  padding: 12px 14px;
+  font-family: 'JetBrains Mono', monospace;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.lap-fastest {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.lap-slowest {
+  color: #ef4444;
+  font-weight: 700;
+}

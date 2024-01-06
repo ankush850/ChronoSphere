@@ -1,0 +1,129 @@
+/* ==========================================================================
+   ChronoSphere — CSS Theme Variables & Design Tokens
+   ========================================================================== */
+
+:root,
+[data-theme="aurora"] {
+  --bg-base: #06151a;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #0c2d33 0%, #06151a 85%);
+  --glow-1: #10b981;
+  --glow-2: #06b6d4;
+  --glow-3: #3b82f6;
+  --card-bg: rgba(10, 35, 41, 0.65);
+  --card-border: rgba(6, 182, 212, 0.25);
+  --card-border-hover: rgba(16, 185, 129, 0.45);
+  --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(6, 182, 212, 0.1);
+  --text-main: #f0fdfa;
+  --text-muted: #99f6e4;
+  --text-accent: #2dd4bf;
+  --accent-glow: #06b6d4;
+  --accent-grad: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --btn-primary-bg: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --btn-primary-text: #042f2e;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.07);
+  --btn-secondary-border: rgba(6, 182, 212, 0.25);
+  --digit-glow: 0 0 25px rgba(6, 182, 212, 0.6), 0 0 45px rgba(16, 185, 129, 0.3);
+  --dial-bg: rgba(8, 28, 33, 0.85);
+  --dial-hand-sec: #2dd4bf;
+  --dropdown-bg: rgba(6, 24, 28, 0.96);
+}
+
+[data-theme="oled"] {
+  --bg-base: #000000;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #111115 0%, #000000 90%);
+  --glow-1: #3b82f6;
+  --glow-2: #ffffff;
+  --glow-3: #60a5fa;
+  --card-bg: rgba(18, 18, 20, 0.75);
+  --card-border: rgba(255, 255, 255, 0.15);
+  --card-border-hover: rgba(255, 255, 255, 0.35);
+  --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-accent: #ffffff;
+  --accent-glow: #ffffff;
+  --accent-grad: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+  --btn-primary-bg: #ffffff;
+  --btn-primary-text: #000000;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --btn-secondary-border: rgba(255, 255, 255, 0.2);
+  --digit-glow: 0 0 25px rgba(255, 255, 255, 0.4);
+  --dial-bg: #09090b;
+  --dial-hand-sec: #3b82f6;
+  --dropdown-bg: rgba(10, 10, 14, 0.98);
+}
+
+[data-theme="sunset"] {
+  --bg-base: #13091b;
+  --bg-gradient: radial-gradient(circle at 50% 15%, #34123b 0%, #13091b 85%);
+  --glow-1: #ff7b00;
+  --glow-2: #ff2a70;
+  --glow-3: #ffd000;
+  --card-bg: rgba(32, 14, 43, 0.65);
+  --card-border: rgba(255, 123, 0, 0.25);
+  --card-border-hover: rgba(255, 42, 112, 0.45);
+  --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 42, 112, 0.12);
+  --text-main: #fff1f2;
+  --text-muted: #fda4af;
+  --text-accent: #ff8c42;
+  --accent-glow: #ff4d6d;
+  --accent-grad: linear-gradient(135deg, #ff7b00 0%, #ff2a70 100%);
+  --btn-primary-bg: linear-gradient(135deg, #ff7b00 0%, #ff2a70 100%);
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.08);
+  --btn-secondary-border: rgba(255, 123, 0, 0.25);
+  --digit-glow: 0 0 25px rgba(255, 123, 0, 0.55), 0 0 45px rgba(255, 42, 112, 0.35);
+  --dial-bg: rgba(26, 11, 35, 0.85);
+  --dial-hand-sec: #ffd000;
+  --dropdown-bg: rgba(24, 10, 32, 0.96);
+}
+
+[data-theme="matrix"] {
+  --bg-base: #030d05;
+  --bg-gradient: radial-gradient(circle at 50% 20%, #08210e 0%, #030d05 90%);
+  --glow-1: #00ff66;
+  --glow-2: #008f39;
+  --glow-3: #22c55e;
+  --card-bg: rgba(6, 26, 12, 0.65);
+  --card-border: rgba(0, 255, 102, 0.25);
+  --card-border-hover: rgba(0, 255, 102, 0.55);
+  --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 255, 102, 0.1);
+  --text-main: #dcfce7;
+  --text-muted: #86efac;
+  --text-accent: #00ff66;
+  --accent-glow: #00ff66;
+  --accent-grad: linear-gradient(135deg, #00ff66 0%, #059669 100%);
+  --btn-primary-bg: linear-gradient(135deg, #00ff66 0%, #10b981 100%);
+  --btn-primary-text: #022c10;
+  --btn-secondary-bg: rgba(0, 255, 102, 0.06);
+  --btn-secondary-border: rgba(0, 255, 102, 0.3);
+  --digit-glow: 0 0 25px rgba(0, 255, 102, 0.6), 0 0 50px rgba(0, 255, 102, 0.3);
+  --dial-bg: rgba(4, 20, 9, 0.9);
+  --dial-hand-sec: #00ff66;
+  --dropdown-bg: rgba(4, 18, 8, 0.97);
+}
+
+[data-theme="light"] {
+  --bg-base: #f1f5f9;
+  --bg-gradient: radial-gradient(circle at 50% 15%, #e2e8f0 0%, #cbd5e1 90%);
+  --glow-1: #818cf8;
+  --glow-2: #38bdf8;
+  --glow-3: #c084fc;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --card-border: rgba(99, 102, 241, 0.2);
+  --card-border-hover: rgba(99, 102, 241, 0.4);
+  --card-shadow: 0 16px 36px rgba(15, 23, 42, 0.08), 0 0 20px rgba(99, 102, 241, 0.05);
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-accent: #4f46e5;
+  --accent-glow: #6366f1;
+  --accent-grad: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
+  --btn-primary-bg: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+  --btn-secondary-border: rgba(0, 0, 0, 0.1);
+  --digit-glow: 0 0 15px rgba(99, 102, 241, 0.25);
+  --dial-bg: #ffffff;
+  --dial-hand-sec: #ef4444;
+  --dropdown-bg: #ffffff;
+}

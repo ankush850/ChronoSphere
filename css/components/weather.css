@@ -1,0 +1,36 @@
+/* Weather Widget Styles */
+.weather-widget {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: all 0.3s ease;
+}
+
+.weather-widget:hover {
+  border-color: var(--card-border-hover);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.weather-icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.weather-temp {
+  font-family: 'Orbitron', 'JetBrains Mono', monospace;
+  font-weight: 800;
+  color: var(--text-accent);
+}
+
+.weather-loc {
+  font-size: 11px;
+  color: var(--text-muted);
+}

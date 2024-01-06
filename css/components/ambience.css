@@ -1,0 +1,40 @@
+/* Ambient Sound Generator Player Styles */
+.ambient-sound-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--btn-secondary-bg);
+  border: 1px solid var(--btn-secondary-border);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.ambient-select {
+  background: transparent;
+  border: none;
+  color: var(--text-main);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ambient-select option {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.ambient-vol-slider {
+  width: 70px;
+  accent-color: var(--text-accent);
+  cursor: pointer;
+}
+
+.ambient-toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
